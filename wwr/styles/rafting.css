@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #0d47a1;        /* Deep Blue */
+    --secondary-color: #1976d2;      /* Lighter Blue */
+    --accent1-color: #ffffff;        /* White for contrast */
+    --accent2-color: #ffb300;        /* Vibrant Yellow/Orange */
+    --header-font: "Abel", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --heading-font: "Overpass", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    font-family: var(--header-font);
+    padding: 16px 0;
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    border-radius: 8px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 179, 0, 0.85); /* Accent2 with transparency */
+    padding: 16px;
+    border-radius: 8px;
+    max-width: 350px;
+    color: var(--primary-color);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
